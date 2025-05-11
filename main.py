@@ -23,7 +23,3 @@ def get_time(timezone: str):
         }
     except Exception:
         return {"error": f"Invalid timezone: {timezone}"}
-
-@app.get("/api/timezones")
-def list_timezones():
-    return sorted(zoneinfo.available_timezones())
