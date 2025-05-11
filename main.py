@@ -5,7 +5,7 @@ import zoneinfo
 app = FastAPI()
 
 @app.get("/")
-def root(:)
+def root():
     return {"mensaje": f"API funcionando correctamente"}
 
 @app.get("/api/time/{timezone}")
